@@ -10,5 +10,6 @@ genes.symbol[ genes.symbol == "KNTC2" ] <- "NDC80"
 genes.symbol[ genes.symbol == "ORC6L" ] <- "ORC6"
 genes.entrez <- unique(grch38$entrez[ grch38$symbol %in% genes.symbol ])
 
-md.human.custom <- data.frame(collection = "custom", geneset = "PAM50", entrez = sort(genes.entrez))
+# First column - general category. Second - signature
+md.human.custom <- data.frame(collection = "cancer", geneset = "PAM50", entrez = sort(genes.entrez))
 save(md.human.custom, file = "data/md.human.custom.rda")
