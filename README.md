@@ -66,3 +66,8 @@ msigdf.human %>% filter(geneset=="KEGG_NON_HOMOLOGOUS_END_JOINING")
 ```
 
 See the [package vignette](https://rawgit.com/stephenturner/msigdf/master/inst/doc/msigdf.html) for more.
+
+## Custom database
+
+- `R/md.R` - a script that populates custom database
+- `data/md.human.custom` - custom database. Available signatures: PAM50
