@@ -67,5 +67,5 @@ md.human.custom.ADMErelated <- md.human.custom.ADMErelated[ complete.cases(md.hu
 md.human.custom <- rbind(md.human.custom.pam50,
                          md.human.custom.ADMEcore,
                          md.human.custom.ADMEextended,
-                         md.human.custom.ADMEextended)
+                         md.human.custom.ADMErelated)
 save(md.human.custom, file = "data/md.human.custom.rda")
